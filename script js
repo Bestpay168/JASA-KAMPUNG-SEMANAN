@@ -118,7 +118,7 @@ function hideLoader() {
     }, 250);
 
 }
-
+window.addEventListener("load", hideLoader);
 
 /* =========================================================
    6. CUSTOMER
