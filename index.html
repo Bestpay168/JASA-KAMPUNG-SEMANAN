@@ -1,0 +1,2002 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="JASA KAMPUNG - Temukan jasa terpercaya di sekitar Anda."
+    >
+
+    <meta name="theme-color" content="#FF6B00">
+
+    <title>JASA KAMPUNG — Semua Jasa, Lebih Mudah</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     LOADING
+===================================================== -->
+<div id="pageLoader" class="page-loader">
+    <div class="loader-spinner"></div>
+    <p>Memuat JASA KAMPUNG...</p>
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+<header class="header" id="header">
+
+    <div class="container header-inner">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">🏠</span>
+
+            <span class="logo-text">
+                <strong>JASA</strong>
+                <span>KAMPUNG</span>
+            </span>
+        </a>
+
+        <button
+            type="button"
+            class="notification-btn"
+            id="notificationBtn"
+            aria-label="Notifikasi"
+        >
+            🔔
+            <span
+                class="notification-badge"
+                id="notificationBadge"
+                hidden
+            >0</span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+<main id="home">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <span class="hero-badge">
+            🏡 Jasa terpercaya di sekitar Anda
+        </span>
+
+        <h1>
+            Butuh Bantuan?
+            <span>Kami Bantu Beres.</span>
+        </h1>
+
+        <p>
+            Cari berbagai jasa untuk kebutuhan rumah,
+            keluarga, teknik, antar-jemput, pendamping,
+            hingga jasa antrian.
+        </p>
+
+
+        <!-- SEARCH -->
+        <div class="search-box">
+
+            <span class="search-icon">🔍</span>
+
+            <input
+                type="search"
+                id="serviceSearch"
+                placeholder="Cari jasa yang Anda butuhkan..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                id="clearSearch"
+                class="clear-search"
+                aria-label="Hapus pencarian"
+                hidden
+            >
+                ×
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CATEGORY
+===================================================== -->
+<section class="categories-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">PILIH KEBUTUHAN</span>
+
+                <h2>Kategori Jasa</h2>
+            </div>
+
+        </div>
+
+
+        <div class="category-list" id="categoryList">
+
+            <button
+                type="button"
+                class="category-item active"
+                data-category="Semua"
+            >
+                <span class="category-icon">✨</span>
+                <span>Semua</span>
+            </button>
+
+
+            <button
+                type="button"
+                class="category-item"
+                data-category="Rumah"
+            >
+                <span class="category-icon">🧺</span>
+                <span>Jasa Rumah</span>
+            </button>
+
+
+            <button
+                type="button"
+                class="category-item"
+                data-category="Teknik"
+            >
+                <span class="category-icon">🔧</span>
+                <span>Jasa Teknik</span>
+            </button>
+
+
+            <button
+                type="button"
+                class="category-item"
+                data-category="Antar Jemput"
+            >
+                <span class="category-icon">🚗</span>
+                <span>Antar Jemput</span>
+            </button>
+
+
+            <button
+                type="button"
+                class="category-item"
+                data-category="Pendamping"
+            >
+                <span class="category-icon">❤️</span>
+                <span>Pendamping</span>
+            </button>
+
+
+            <button
+                type="button"
+                class="category-item"
+                data-category="Antrian"
+            >
+                <span class="category-icon">⏰</span>
+                <span>Jasa Antrian</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+<section class="services-section" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">LAYANAN</span>
+                <h2>Jasa yang Tersedia</h2>
+            </div>
+
+            <button
+                type="button"
+                class="text-button"
+                id="showAllServices"
+            >
+                Lihat Semua
+            </button>
+
+        </div>
+
+
+        <!-- SERVICE LIST -->
+        <div
+            class="service-grid"
+            id="serviceList"
+        >
+
+
+            <!-- =========================
+                 JASA RUMAH
+            ========================== -->
+
+            <article
+                class="service-card"
+                data-category="Rumah"
+                data-name="Setrika"
+                data-price="5000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">👕</div>
+
+                    <span class="service-category">
+                        Rumah
+                    </span>
+                </div>
+
+                <h3>Setrika</h3>
+
+                <p>
+                    Jasa setrika pakaian rapi
+                    dan praktis.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp5.000/kg</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Setrika"
+                        data-service-price="5000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Rumah"
+                data-name="Bersih Rumah"
+                data-price="50000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">🧹</div>
+
+                    <span class="service-category">
+                        Rumah
+                    </span>
+                </div>
+
+                <h3>Bersih Rumah</h3>
+
+                <p>
+                    Bantuan membersihkan rumah
+                    agar lebih nyaman.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp50.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Bersih Rumah"
+                        data-service-price="50000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Rumah"
+                data-name="Cuci Sepatu"
+                data-price="25000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">👟</div>
+
+                    <span class="service-category">
+                        Rumah
+                    </span>
+                </div>
+
+                <h3>Cuci Sepatu</h3>
+
+                <p>
+                    Membersihkan sepatu agar
+                    kembali bersih dan segar.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp25.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Cuci Sepatu"
+                        data-service-price="25000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Rumah"
+                data-name="Cuci Helm"
+                data-price="20000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">🪖</div>
+
+                    <span class="service-category">
+                        Rumah
+                    </span>
+                </div>
+
+                <h3>Cuci Helm</h3>
+
+                <p>
+                    Membersihkan helm dari kotoran
+                    dan bau.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp20.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Cuci Helm"
+                        data-service-price="20000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 JASA TEKNIK
+            ========================== -->
+
+            <article
+                class="service-card"
+                data-category="Teknik"
+                data-name="Perbaikan Listrik"
+                data-price="50000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">⚡</div>
+
+                    <span class="service-category">
+                        Teknik
+                    </span>
+                </div>
+
+                <h3>Perbaikan Listrik</h3>
+
+                <p>
+                    Bantuan memperbaiki instalasi
+                    dan masalah listrik rumah.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp50.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Perbaikan Listrik"
+                        data-service-price="50000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Teknik"
+                data-name="Service AC"
+                data-price="75000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">❄️</div>
+
+                    <span class="service-category">
+                        Teknik
+                    </span>
+                </div>
+
+                <h3>Service AC</h3>
+
+                <p>
+                    Cuci dan pemeriksaan AC
+                    rumah atau kantor.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp75.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Service AC"
+                        data-service-price="75000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Teknik"
+                data-name="Service Pompa Air"
+                data-price="50000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">💧</div>
+
+                    <span class="service-category">
+                        Teknik
+                    </span>
+                </div>
+
+                <h3>Service Pompa Air</h3>
+
+                <p>
+                    Pemeriksaan dan perbaikan
+                    pompa air rumah.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp50.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Service Pompa Air"
+                        data-service-price="50000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Teknik"
+                data-name="Plumbing"
+                data-price="50000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">🚰</div>
+
+                    <span class="service-category">
+                        Teknik
+                    </span>
+                </div>
+
+                <h3>Plumbing</h3>
+
+                <p>
+                    Mengatasi kebocoran pipa,
+                    keran dan saluran air.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp50.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Plumbing"
+                        data-service-price="50000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Teknik"
+                data-name="Perbaikan Rumah"
+                data-price="75000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">🧱</div>
+
+                    <span class="service-category">
+                        Teknik
+                    </span>
+                </div>
+
+                <h3>Perbaikan Rumah</h3>
+
+                <p>
+                    Perbaikan kecil rumah dan
+                    pekerjaan tukang umum.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp75.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Perbaikan Rumah"
+                        data-service-price="75000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 ANTAR JEMPUT
+            ========================== -->
+
+            <article
+                class="service-card"
+                data-category="Antar Jemput"
+                data-name="Antar Jemput Anak Sekolah"
+                data-price="15000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">🧒</div>
+
+                    <span class="service-category">
+                        Antar Jemput
+                    </span>
+                </div>
+
+                <h3>Antar Jemput Anak Sekolah</h3>
+
+                <p>
+                    Layanan antar dan jemput
+                    anak sesuai jadwal.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp15.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Antar Jemput Anak Sekolah"
+                        data-service-price="15000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Antar Jemput"
+                data-name="Antar Barang"
+                data-price="10000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">📦</div>
+
+                    <span class="service-category">
+                        Antar Jemput
+                    </span>
+                </div>
+
+                <h3>Antar Barang</h3>
+
+                <p>
+                    Mengantar barang ke alamat
+                    tujuan dengan aman.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp10.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Antar Barang"
+                        data-service-price="10000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Antar Jemput"
+                data-name="Belanja Titipan"
+                data-price="15000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">🛒</div>
+
+                    <span class="service-category">
+                        Antar Jemput
+                    </span>
+                </div>
+
+                <h3>Belanja Titipan</h3>
+
+                <p>
+                    Kami bantu belanja kebutuhan
+                    dan mengantarkannya.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp15.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Belanja Titipan"
+                        data-service-price="15000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 PENDAMPING
+            ========================== -->
+
+            <article
+                class="service-card"
+                data-category="Pendamping"
+                data-name="Menjaga Orang Sakit"
+                data-price="100000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">❤️</div>
+
+                    <span class="service-category">
+                        Pendamping
+                    </span>
+                </div>
+
+                <h3>Menjaga Orang Sakit</h3>
+
+                <p>
+                    Pendampingan untuk membantu
+                    kebutuhan dasar selama keluarga
+                    tidak dapat menemani.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp100.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Menjaga Orang Sakit"
+                        data-service-price="100000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Pendamping"
+                data-name="Pendamping Lansia"
+                data-price="100000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">👴</div>
+
+                    <span class="service-category">
+                        Pendamping
+                    </span>
+                </div>
+
+                <h3>Pendamping Lansia</h3>
+
+                <p>
+                    Membantu menemani lansia
+                    dalam aktivitas sehari-hari.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp100.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Pendamping Lansia"
+                        data-service-price="100000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Pendamping"
+                data-name="Temani ke Rumah Sakit"
+                data-price="75000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">🏥</div>
+
+                    <span class="service-category">
+                        Pendamping
+                    </span>
+                </div>
+
+                <h3>Temani ke Rumah Sakit</h3>
+
+                <p>
+                    Pendamping perjalanan dan
+                    kebutuhan non-medis.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp75.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Temani ke Rumah Sakit"
+                        data-service-price="75000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 JASA ANTRIAN
+            ========================== -->
+
+            <article
+                class="service-card"
+                data-category="Antrian"
+                data-name="Antri Rumah Sakit"
+                data-price="50000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">🏥</div>
+
+                    <span class="service-category">
+                        Antrian
+                    </span>
+                </div>
+
+                <h3>Antri Rumah Sakit</h3>
+
+                <p>
+                    Membantu mengambil dan menunggu
+                    antrian sesuai ketentuan tempat.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp50.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Antri Rumah Sakit"
+                        data-service-price="50000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Antrian"
+                data-name="Antri Administrasi"
+                data-price="30000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">📄</div>
+
+                    <span class="service-category">
+                        Antrian
+                    </span>
+                </div>
+
+                <h3>Antri Administrasi</h3>
+
+                <p>
+                    Membantu menunggu antrian
+                    layanan administrasi.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp30.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Antri Administrasi"
+                        data-service-price="30000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="service-card"
+                data-category="Antrian"
+                data-name="Antri Pengurusan Dokumen"
+                data-price="50000"
+            >
+
+                <div class="service-card-top">
+                    <div class="service-icon">📋</div>
+
+                    <span class="service-category">
+                        Antrian
+                    </span>
+                </div>
+
+                <h3>Antri Pengurusan Dokumen</h3>
+
+                <p>
+                    Membantu menunggu antrian
+                    untuk layanan yang diperbolehkan.
+                </p>
+
+                <div class="service-card-bottom">
+
+                    <div class="service-price">
+                        <small>Mulai</small>
+                        <strong>Rp50.000</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="book-button"
+                        data-book-service
+                        data-service-name="Antri Pengurusan Dokumen"
+                        data-service-price="50000"
+                    >
+                        Pesan
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- EMPTY STATE -->
+        <div
+            class="empty-state"
+            id="serviceEmptyState"
+            hidden
+        >
+            <div class="empty-icon">🔍</div>
+
+            <h3>Jasa tidak ditemukan</h3>
+
+            <p>
+                Coba gunakan kata pencarian lain
+                atau pilih kategori berbeda.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHY US
+===================================================== -->
+<section class="trust-section">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="section-label">KENAPA KAMI?</span>
+
+            <h2>Bantuan Lebih Dekat</h2>
+
+            <p>
+                Jasa untuk membantu kebutuhan
+                sehari-hari masyarakat sekitar.
+            </p>
+
+        </div>
+
+
+        <div class="trust-grid">
+
+            <div class="trust-card">
+                <div class="trust-icon">📍</div>
+                <h3>Dekat</h3>
+                <p>
+                    Fokus membantu kebutuhan
+                    masyarakat di sekitar.
+                </p>
+            </div>
+
+
+            <div class="trust-card">
+                <div class="trust-icon">⚡</div>
+                <h3>Praktis</h3>
+                <p>
+                    Pesan jasa dengan proses
+                    sederhana.
+                </p>
+            </div>
+
+
+            <div class="trust-card">
+                <div class="trust-icon">🤝</div>
+                <h3>Terhubung</h3>
+                <p>
+                    Pesanan diteruskan ke admin
+                    untuk dicarikan mitra.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HOW IT WORKS
+===================================================== -->
+<section class="how-section">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="section-label">CARA PESAN</span>
+
+            <h2>Mudah dalam 4 Langkah</h2>
+
+        </div>
+
+
+        <div class="steps-grid">
+
+            <div class="step-card">
+                <span class="step-number">1</span>
+                <div class="step-icon">🔎</div>
+                <h3>Pilih Jasa</h3>
+                <p>
+                    Pilih layanan sesuai kebutuhan.
+                </p>
+            </div>
+
+
+            <div class="step-card">
+                <span class="step-number">2</span>
+                <div class="step-icon">📝</div>
+                <h3>Isi Pesanan</h3>
+                <p>
+                    Masukkan detail kebutuhan Anda.
+                </p>
+            </div>
+
+
+            <div class="step-card">
+                <span class="step-number">3</span>
+                <div class="step-icon">💬</div>
+                <h3>Konfirmasi</h3>
+                <p>
+                    Pesanan dikirim ke admin.
+                </p>
+            </div>
+
+
+            <div class="step-card">
+                <span class="step-number">4</span>
+                <div class="step-icon">🤝</div>
+                <h3>Jasa Dikerjakan</h3>
+                <p>
+                    Mitra menjalankan layanan.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     JOIN PARTNER
+===================================================== -->
+<section class="partner-section">
+
+    <div class="container">
+
+        <div class="partner-card">
+
+            <div class="partner-content">
+
+                <span class="section-label">
+                    PUNYA KEAHLIAN?
+                </span>
+
+                <h2>
+                    Jadi Mitra JASA KAMPUNG
+                </h2>
+
+                <p>
+                    Punya keahlian teknik, mengantar,
+                    membersihkan rumah atau membantu
+                    kebutuhan warga?
+                    Bergabung sebagai mitra.
+                </p>
+
+                <button
+                    type="button"
+                    class="primary-button"
+                    id="joinTechnicianBtn"
+                >
+                    🤝 Daftar Jadi Mitra
+                </button>
+
+            </div>
+
+            <div class="partner-illustration">
+                🧑‍🔧
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    <span class="logo-icon">🏠</span>
+
+                    <span class="logo-text">
+                        <strong>JASA</strong>
+                        <span>KAMPUNG</span>
+                    </span>
+                </a>
+
+                <p>
+                    Satu tempat untuk berbagai
+                    kebutuhan jasa sehari-hari.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Beranda</a>
+                <a href="#services">Jasa</a>
+
+                <button
+                    type="button"
+                    id="footerOrderBtn"
+                >
+                    Pesanan
+                </button>
+
+                <button
+                    type="button"
+                    id="footerProfileBtn"
+                >
+                    Profil
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                JASA KAMPUNG.
+                Semua hak dilindungi.
+            </p>
+
+            <p>
+                Dibuat untuk membantu warga.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     BOTTOM NAVIGATION
+===================================================== -->
+<nav class="bottom-nav" id="bottomNav">
+
+    <button
+        type="button"
+        class="bottom-nav-item active"
+        data-nav="home"
+    >
+        <span>🏠</span>
+        <small>Beranda</small>
+    </button>
+
+
+    <button
+        type="button"
+        class="bottom-nav-item"
+        data-nav="services"
+    >
+        <span>🧰</span>
+        <small>Jasa</small>
+    </button>
+
+
+    <button
+        type="button"
+        class="bottom-nav-item"
+        data-nav="orders"
+    >
+        <span>📋</span>
+        <small>Pesanan</small>
+    </button>
+
+
+    <button
+        type="button"
+        class="bottom-nav-item"
+        data-nav="profile"
+    >
+        <span>👤</span>
+        <small>Profil</small>
+    </button>
+
+</nav>
+
+
+<!-- =====================================================
+     BOOKING MODAL
+===================================================== -->
+<div
+    class="modal"
+    id="bookingModal"
+    aria-hidden="true"
+>
+
+    <div class="modal-overlay" data-close-modal></div>
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <div>
+                <span class="modal-label">
+                    PESAN JASA
+                </span>
+
+                <h2 id="selectedServiceName">
+                    Pesan Jasa
+                </h2>
+            </div>
+
+            <button
+                type="button"
+                class="modal-close"
+                data-close-modal
+                aria-label="Tutup"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <form id="bookingForm">
+
+            <input
+                type="hidden"
+                id="selectedService"
+            >
+
+            <input
+                type="hidden"
+                id="selectedServicePrice"
+            >
+
+
+            <!-- CUSTOMER -->
+            <div class="form-group">
+
+                <label for="customerName">
+                    Nama Lengkap
+                </label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Contoh: Budi"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="customerPhone">
+                    Nomor WhatsApp
+                </label>
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="08xxxxxxxxxx"
+                    inputmode="tel"
+                    required
+                >
+
+            </div>
+
+
+            <!-- SPECIAL SERVICE INFO -->
+            <div
+                class="special-service-box"
+                id="specialServiceInfo"
+                hidden
+            >
+                <strong id="specialServiceTitle">
+                    Informasi tambahan
+                </strong>
+
+                <p id="specialServiceDescription">
+                    Isi detail kebutuhan Anda.
+                </p>
+            </div>
+
+
+            <!-- PROBLEM -->
+            <div class="form-group">
+
+                <label for="problemDescription">
+                    Detail Kebutuhan
+                </label>
+
+                <textarea
+                    id="problemDescription"
+                    rows="4"
+                    placeholder="Jelaskan kebutuhan Anda..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <!-- ADDRESS -->
+            <div class="form-group">
+
+                <label for="customerAddress">
+                    Alamat / Lokasi
+                </label>
+
+                <textarea
+                    id="customerAddress"
+                    rows="3"
+                    placeholder="Masukkan alamat lengkap..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <!-- DATE -->
+            <div class="form-group">
+
+                <label for="scheduleDate">
+                    Tanggal & Waktu
+                </label>
+
+                <input
+                    type="datetime-local"
+                    id="scheduleDate"
+                    required
+                >
+
+            </div>
+
+
+            <!-- PHOTO -->
+            <div
+                class="form-group"
+                id="photoUploadGroup"
+            >
+
+                <label for="problemPhoto">
+                    Foto Kondisi
+                    <span>(opsional)</span>
+                </label>
+
+                <input
+                    type="file"
+                    id="problemPhoto"
+                    accept="image/*"
+                >
+
+                <div
+                    class="photo-preview"
+                    id="photoPreview"
+                    hidden
+                >
+                    <img
+                        id="photoPreviewImage"
+                        src=""
+                        alt="Preview foto"
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- PRICE -->
+            <div class="price-preview">
+
+                <div>
+                    <span>Estimasi mulai</span>
+                    <strong id="estimatedPrice">
+                        Rp0
+                    </strong>
+                </div>
+
+                <small>
+                    Harga akhir dapat berubah sesuai
+                    jarak, durasi, tingkat kesulitan,
+                    atau kebutuhan material.
+                </small>
+
+            </div>
+
+
+            <!-- AGREEMENT -->
+            <label class="checkbox-label">
+
+                <input
+                    type="checkbox"
+                    id="customerAgreement"
+                    required
+                >
+
+                <span>
+                    Saya memastikan informasi yang
+                    saya berikan sudah benar.
+                </span>
+
+            </label>
+
+
+            <button
+                type="submit"
+                class="primary-button full-width"
+                id="submitBooking"
+            >
+                💬 Pesan via WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     ORDERS MODAL
+===================================================== -->
+<div
+    class="modal"
+    id="ordersModal"
+    aria-hidden="true"
+>
+
+    <div class="modal-overlay" data-close-modal></div>
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <div>
+                <span class="modal-label">
+                    RIWAYAT
+                </span>
+
+                <h2>Pesanan Saya</h2>
+            </div>
+
+            <button
+                type="button"
+                class="modal-close"
+                data-close-modal
+                aria-label="Tutup"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="orders-list"
+            id="ordersList"
+        ></div>
+
+
+        <div
+            class="empty-orders"
+            id="emptyOrders"
+        >
+
+            <div>📋</div>
+
+            <h3>Belum ada pesanan</h3>
+
+            <p>
+                Pesanan yang Anda buat akan
+                muncul di sini.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     PROFILE MODAL
+===================================================== -->
+<div
+    class="modal"
+    id="profileModal"
+    aria-hidden="true"
+>
+
+    <div class="modal-overlay" data-close-modal></div>
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <div>
+                <span class="modal-label">
+                    AKUN
+                </span>
+
+                <h2>Profil Saya</h2>
+            </div>
+
+            <button
+                type="button"
+                class="modal-close"
+                data-close-modal
+                aria-label="Tutup"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <form id="profileForm">
+
+            <div class="profile-avatar">
+                👤
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="profileName">
+                    Nama
+                </label>
+
+                <input
+                    type="text"
+                    id="profileName"
+                    placeholder="Nama Anda"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="profilePhone">
+                    WhatsApp
+                </label>
+
+                <input
+                    type="tel"
+                    id="profilePhone"
+                    placeholder="08xxxxxxxxxx"
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="primary-button full-width"
+            >
+                Simpan Profil
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     NOTIFICATION MODAL
+===================================================== -->
+<div
+    class="modal"
+    id="notificationModal"
+    aria-hidden="true"
+>
+
+    <div class="modal-overlay" data-close-modal></div>
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <div>
+                <span class="modal-label">
+                    INFORMASI
+                </span>
+
+                <h2>Notifikasi</h2>
+            </div>
+
+            <button
+                type="button"
+                class="modal-close"
+                data-close-modal
+                aria-label="Tutup"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="notification-list"
+            id="notificationList"
+        >
+
+            <div class="notification-empty">
+
+                <div>🔔</div>
+
+                <h3>Belum ada notifikasi</h3>
+
+                <p>
+                    Informasi pesanan akan muncul
+                    di sini.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     PARTNER / MITRA MODAL
+===================================================== -->
+<div
+    class="modal"
+    id="technicianModal"
+    aria-hidden="true"
+>
+
+    <div class="modal-overlay" data-close-modal></div>
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <div>
+                <span class="modal-label">
+                    MITRA
+                </span>
+
+                <h2>Daftar Jadi Mitra</h2>
+            </div>
+
+            <button
+                type="button"
+                class="modal-close"
+                data-close-modal
+                aria-label="Tutup"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <p class="modal-description">
+            Isi data singkat. Admin akan menghubungi
+            Anda untuk proses selanjutnya.
+        </p>
+
+
+        <form id="technicianForm">
+
+            <div class="form-group">
+
+                <label for="technicianName">
+                    Nama
+                </label>
+
+                <input
+                    type="text"
+                    id="technicianName"
+                    placeholder="Nama lengkap"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="technicianPhone">
+                    WhatsApp
+                </label>
+
+                <input
+                    type="tel"
+                    id="technicianPhone"
+                    placeholder="08xxxxxxxxxx"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="technicianCategory">
+                    Keahlian
+                </label>
+
+                <select id="technicianCategory" required>
+
+                    <option value="">
+                        Pilih keahlian
+                    </option>
+
+                    <option value="Jasa Rumah">
+                        Jasa Rumah
+                    </option>
+
+                    <option value="Listrik">
+                        Listrik
+                    </option>
+
+                    <option value="AC">
+                        Service AC
+                    </option>
+
+                    <option value="Pompa Air">
+                        Pompa Air
+                    </option>
+
+                    <option value="Plumbing">
+                        Plumbing
+                    </option>
+
+                    <option value="Tukang">
+                        Tukang / Perbaikan Rumah
+                    </option>
+
+                    <option value="Antar Jemput">
+                        Antar Jemput
+                    </option>
+
+                    <option value="Pendamping">
+                        Pendamping
+                    </option>
+
+                    <option value="Jasa Antrian">
+                        Jasa Antrian
+                    </option>
+
+                    <option value="Lainnya">
+                        Lainnya
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="technicianAddress">
+                    Area Layanan
+                </label>
+
+                <textarea
+                    id="technicianAddress"
+                    rows="3"
+                    placeholder="Contoh: Semanan dan sekitarnya"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="primary-button full-width"
+            >
+                💬 Daftar via WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+<div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+>
+
+    <span id="toastIcon">✓</span>
+
+    <span id="toastMessage">
+        Berhasil
+    </span>
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+<script src="script.js"></script>
+
+</body>
+</html>
