@@ -100,24 +100,7 @@ function initializeApp() {
 }
 
 
-/* =========================================================
-   5. LOADER
-========================================================= */
 
-function hideLoader() {
-
-    const loader =
-        document.getElementById("pageLoader");
-
-    if (!loader) return;
-
-    setTimeout(() => {
-
-        loader.classList.add("hidden");
-
-    }, 250);
-
-}
 
 /* =========================================================
    6. CUSTOMER
