@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function initializeApp() {
 
-    hideLoader();
+    
 
     loadCustomer();
 
