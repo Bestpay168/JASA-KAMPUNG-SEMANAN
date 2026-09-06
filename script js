@@ -118,8 +118,10 @@ function hideLoader() {
     }, 250);
 
 }
-window.addEventListener("load", hideLoader);
-
+document.addEventListener("DOMContentLoaded", () => {
+    hideLoader();
+    initializeApp();
+});
 /* =========================================================
    6. CUSTOMER
 ========================================================= */
